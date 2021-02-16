@@ -1,0 +1,22 @@
+{
+  "name": "abdellah-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "rollup -c --watch",
+    "clean": "rimraf build _site bundle_stats.html",
+    "build": "rollup -c --environment NODE_ENV:production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.2.1",
+    "autoprefixer": "^10.2.4",
+    "gladejs": "^0.5.1",
+    "postcss": "^8.2.6",
+    "rollup-plugin-postcss": "^4.0.0",
+    "tailwindcss": "^2.0.3"
+  }
+}
