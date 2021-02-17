@@ -40,7 +40,7 @@ const plugins = [
 
   // @docs "https://github.com/rollup/plugins/tree/master/packages/commonjs#options"
   commonjs({
-    include: /node_modules/, // let's limit this to NodeJS
+    include: [/node_modules/, "build/**/*.js"], // let's limit this to NodeJS and "build"
     extensions: [".cjs", ".js"], // and only CommonJS files
   }),
 
