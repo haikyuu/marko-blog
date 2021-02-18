@@ -1,4 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>GladeJS Homepage</title>
+        <base href=out.global.pageId/>
+        <for|style| of=out.global.styles>
+            <link rel="stylesheet" href=style.href/>
+        </for>
+        <script type="module">${out.global.module}</script>
+    </head>
+    <body class="home-page">
+
+      
 <div class=["absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden", {"hidden":!state.isMenuOpen}]>
    text
+   ${console.log({out})}
    <button on-click("openMenu")>click</button>
 </div>
+
+
+</body></html>
