@@ -1,5 +1,6 @@
 module.exports = class {
     onCreate() {
+        console.log("created")
         this.state = {
             isMenuOpen: false,
         }
